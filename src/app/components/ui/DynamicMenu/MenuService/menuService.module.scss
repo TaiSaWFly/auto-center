@@ -1,0 +1,29 @@
+@import "../../../../../styles/colors/colors.scss";
+
+.menu_service {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  max-width: 428px;
+  width: 100%;
+
+  @media (max-width: 1130px) {
+    max-width: 100%;
+    margin-bottom: 40px;
+  }
+}
+
+.menu_service__link {
+  font-size: 1.5rem;
+  line-height: 1.2;
+  transition: color 0.3s ease-in-out;
+
+  &:hover {
+    color: $accent;
+  }
+
+  @media (max-width: 1130px) {
+    display: none;
+  }
+}

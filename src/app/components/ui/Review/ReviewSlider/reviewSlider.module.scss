@@ -1,0 +1,146 @@
+@import "../../../../../styles/colors/colors.scss";
+
+.review_slider {
+  color: $lbTertiary;
+  position: relative;
+}
+
+.review_slider__wrapper {
+  display: flex;
+  justify-content: flex-end;
+  margin-bottom: 180px;
+
+  @media (max-width: 985px) {
+    margin-bottom: 120px;
+  }
+
+  @media (max-width: 576px) {
+    margin-bottom: 100px;
+  }
+}
+
+.review_slider__content_wrapper {
+  max-width: 880px;
+  width: 100%;
+}
+
+.review_slider__content_info {
+  margin-bottom: 40px;
+  display: flex;
+}
+
+.review_slider__content_avatar {
+  margin-right: 15px;
+  width: 60px;
+  height: 60px;
+  background: $bgPrimary;
+  border-radius: 50%;
+
+  position: relative;
+
+  & div {
+    width: 24px;
+    height: 24px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+
+    transform: translate3d(-50%, -50%, 0);
+  }
+}
+
+.review_slider__content_user_name {
+  font-size: 2.1rem;
+  line-height: 1.2;
+}
+
+.review_slider__content_created {
+  font-size: 1.4rem;
+  line-height: 1.4;
+  color: $lbSecondary;
+}
+
+.review_slider__content {
+  font-size: 2.8rem;
+  line-height: 1.2;
+
+  @media (max-width: 1024px) {
+    padding-right: 15px;
+  }
+
+  @media (max-width: 985px) {
+    font-size: 2.4rem;
+  }
+
+  @media (max-width: 576px) {
+    font-size: 2.1rem;
+  }
+}
+
+.review_slider__content_rating {
+  display: flex;
+
+  & div {
+    margin-right: 5px;
+    &:last-of-type {
+      margin-right: 0;
+    }
+  }
+  & div * {
+    fill: $accent;
+  }
+}
+
+.review_slider__action {
+  display: flex;
+
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.review_slider__action_btn {
+  margin-right: 5px;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background: $bgQuaternary;
+  border: 1px solid $bgPrimary;
+  cursor: pointer;
+
+  position: relative;
+  transition: all 0.3s ease-in-out;
+
+  &:hover {
+    background: $bgTertiary;
+
+    & div * {
+      stroke: $bgQuaternary;
+    }
+  }
+
+  & div {
+    width: 24px;
+    height: 24px;
+
+    position: absolute;
+    top: 50%;
+    left: 50%;
+
+    transform: translate3d(-50%, -50%, 0);
+
+    & * {
+      stroke: $lbTertiary;
+      transition: stroke 0.1s ease-in-out;
+    }
+  }
+
+  &:last-of-type {
+    margin-right: 0;
+  }
+
+  @media (max-width: 475px) {
+    width: 50px;
+    height: 50px;
+  }
+}

@@ -1,0 +1,110 @@
+@import "../../../../../styles/colors/colors.scss";
+
+.dropdown_more_menu {
+  width: 100%;
+  background: rgba(0, 0, 0, 0.65);
+  border-top: 1px solid $accent;
+
+  position: fixed;
+  left: 0;
+  z-index: 1011;
+
+  overflow: auto;
+
+  @media (max-width: 1130px) {
+    border-color: $sprSecondary;
+  }
+}
+
+.dropdown_more_menu__wrapper {
+  background: $bgPrimary;
+}
+
+.dropdown_more_menu__conteiner {
+  width: 100%;
+  padding: 40px 0;
+
+  @media (max-width: 1130px) {
+    padding: 30px 0 20px 0;
+  }
+
+  @media (max-width: 576px) {
+    padding: 20px 0;
+  }
+}
+
+.dropdown_more_menu__info_wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+
+.dropdown_more_menu__info {
+  margin-right: 20px;
+}
+
+.dropdown_more_menu__info_contact {
+  margin-bottom: 150px;
+}
+
+.dropdown_more_menu__info_contact_telephone {
+  margin-bottom: 20px;
+  font-size: 3.8rem;
+  line-height: 1.1;
+  color: $accent;
+  white-space: nowrap;
+}
+
+.dropdown_more_menu__info_contact_email {
+  margin-bottom: 20px;
+  font-size: 2.1rem;
+  line-height: 1.2;
+  color: $lbPrimary;
+
+  & a {
+    display: inline;
+    position: relative;
+
+    &::after {
+      content: "";
+      width: 100%;
+      height: 1px;
+      background: $lbPrimary;
+
+      position: absolute;
+      bottom: 1px;
+      left: 0;
+    }
+  }
+}
+
+.dropdown_more_menu__info_contact_time {
+  & span {
+    display: block;
+    font-size: 1.6rem;
+    line-height: 1.4;
+    color: $lbSecondary;
+  }
+}
+
+.dropdown_more_menu__address {
+  margin-bottom: 40px;
+}
+
+.dropdown_more_menu__info_more_menus {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  max-width: 428px;
+  width: 100%;
+}
+
+.dropdown_more_menu__info_more_menus__link {
+  font-size: 1.5rem;
+  line-height: 1.2;
+  transition: color 0.3s ease-in-out;
+
+  &:hover {
+    color: $accent;
+  }
+}

@@ -1,0 +1,50 @@
+@import "../../../../../styles/colors/colors.scss";
+
+.textarea__field {
+  position: relative;
+}
+
+.textarea {
+  min-width: 100%;
+
+  &:focus {
+    & + .textarea__label {
+      font-size: 1.2rem;
+      color: $lbSecondary;
+      top: 18px;
+    }
+
+    @media (max-width: 850px) {
+      top: 15px;
+    }
+  }
+
+  &:valid {
+    & + .textarea__label {
+      font-size: 1.2rem;
+      color: $lbSecondary;
+      top: 18px;
+    }
+
+    @media (max-width: 850px) {
+      top: 15px;
+    }
+  }
+}
+
+.textarea__label {
+  font-size: 1.6rem;
+  line-height: 1.4;
+  color: $lbPrimary;
+
+  position: absolute;
+  top: 28px;
+  left: 30px;
+
+  transition: all 0.3s ease-in-out;
+
+  @media (max-width: 850px) {
+    top: 23px;
+    left: 15px;
+  }
+}

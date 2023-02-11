@@ -1,0 +1,27 @@
+@import "../../../../styles/colors/colors.scss";
+
+.address_names {
+  margin-bottom: 10px;
+
+  & span {
+    display: block;
+    font-size: 1.4rem;
+    line-height: 1.4;
+    color: $lbSecondary;
+  }
+
+  @media (max-width: 1130px) {
+    margin-bottom: 0;
+  }
+}
+
+.address_names__title {
+  font-family: "Arial Nova Bold";
+  font-size: 1.2rem;
+  line-height: 2;
+  text-transform: uppercase;
+
+  @media (max-width: 1130px) {
+    font-size: 1rem;
+  }
+}

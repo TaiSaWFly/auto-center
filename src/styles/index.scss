@@ -1,0 +1,33 @@
+// @imports
+@import "./fontStyles/fontStyles.scss";
+@import "./colors/colors.scss";
+@import "./styleDefault/styleDefault.scss";
+@import "./slickSlide/slickSlide.scss";
+
+html {
+  font-size: 10px;
+}
+
+body {
+  margin: 0;
+  cursor: default;
+
+  font-family: "Arial Nova Regular";
+  font-weight: 400;
+  font-size: 1rem;
+  color: $lbPrimary;
+
+  -webkit-font-smoothing: subpixel-antialiased;
+  -webkid-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.no_scroll {
+  overflow: hidden;
+}
+
+*,
+*:after,
+*:before {
+  box-sizing: border-box;
+}

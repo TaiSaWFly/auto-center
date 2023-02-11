@@ -1,0 +1,47 @@
+@import "../../../../../styles/colors/colors.scss";
+
+.menu_navigate {
+  height: 155px;
+  margin-bottom: 20px;
+
+  @media (max-width: 425px) {
+    height: 96px;
+  }
+}
+
+.menu_navigate__list {
+  display: flex;
+  flex-flow: column wrap;
+  height: 100%;
+  font-size: 3.2rem;
+  line-height: 1.1;
+
+  @media (max-width: 625px) {
+    font-size: 2.8rem;
+  }
+
+  @media (max-width: 425px) {
+    font-size: 1.8rem;
+    line-height: 1.2;
+  }
+}
+
+.menu_navigate__list_item {
+  display: flex;
+  align-items: center;
+  width: 50%;
+  height: 51.5px;
+
+  & span {
+    cursor: pointer;
+    transition: color 0.3s ease-in-out;
+
+    &:hover {
+      color: $accent;
+    }
+  }
+
+  @media (max-width: 425px) {
+    height: 32px;
+  }
+}

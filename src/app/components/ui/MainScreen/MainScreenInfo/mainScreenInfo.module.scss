@@ -1,0 +1,131 @@
+@import "../../../../../styles/colors/colors.scss";
+
+.main_screen_info {
+  padding: 80px 0 60px 0;
+
+  font-family: "Arial Nova Regular";
+  line-height: 1;
+  color: $lbTertiary;
+
+  @media (max-width: 985px) {
+    padding: 60px 0 60px 0;
+  }
+}
+
+.main_screen_info__title {
+  width: 50%;
+  margin-bottom: 40px;
+
+  font-family: "Arial Nova Regular";
+  font-weight: 400;
+  font-size: 6.6rem;
+  color: $lbTertiary;
+  line-height: 0.95;
+  text-transform: capitalize;
+
+  @media (max-width: 1460px) {
+    font-size: 4.4vw;
+  }
+
+  @media (max-width: 1130px) {
+    font-size: 4.3vw;
+  }
+
+  @media (max-width: 985px) {
+    width: 100%;
+    font-size: 6rem;
+  }
+
+  @media (max-width: 744px) {
+    margin-bottom: 20px;
+    font-size: 4.4rem;
+  }
+
+  @media (max-width: 510px) {
+    font-size: 4.1rem;
+  }
+
+  @media (max-width: 470px) {
+    font-size: 3.3rem;
+  }
+}
+
+.main_screen_info__telephone {
+  margin-bottom: 60px;
+  font-size: 6.7rem;
+  line-height: 0.95;
+  color: $accent;
+
+  @media (max-width: 1400px) {
+    font-size: 5.9rem;
+  }
+
+  @media (max-width: 1230px) {
+    font-size: 5.3rem;
+  }
+
+  @media (max-width: 1130px) {
+    font-size: 4.45vw;
+  }
+
+  @media (max-width: 985px) {
+    font-size: 5.5rem;
+  }
+
+  @media (max-width: 744px) {
+    margin-bottom: 40px;
+    font-size: 4.4rem;
+  }
+
+  @media (max-width: 470px) {
+    font-size: 3.4rem;
+  }
+}
+
+.main_screen_info__subtitle {
+  margin-bottom: 50px;
+  font-size: 1.6rem;
+  line-height: 1.4;
+
+  @media (max-width: 744px) {
+    margin-bottom: 40px;
+  }
+}
+
+.main_screen_info__subtitle_content {
+  margin-bottom: 10px;
+
+  & div {
+    color: $lbSecondary;
+  }
+
+  & span {
+    display: block;
+  }
+
+  @media (max-width: 744px) {
+    margin-bottom: 14px;
+  }
+}
+
+.main_screen_info__action {
+  display: flex;
+
+  & span {
+    line-height: 20px;
+    margin-right: 10px;
+  }
+
+  & div {
+    width: 20px;
+    height: 20px;
+
+    transition: transform 0.3s ease-in-out;
+  }
+
+  &:hover {
+    & div {
+      transform: translateY(5px);
+    }
+  }
+}

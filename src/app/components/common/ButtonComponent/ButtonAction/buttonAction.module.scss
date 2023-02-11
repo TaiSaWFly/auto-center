@@ -1,0 +1,23 @@
+.button_action {
+  & button {
+    display: flex;
+
+    & span {
+      margin-right: 10px;
+    }
+
+    & div,
+    div * {
+      width: 20px;
+      height: 20px;
+      stroke: black;
+      transition: transform 0.3s ease-in-out;
+    }
+
+    &:hover {
+      div {
+        transform: translateX(5px);
+      }
+    }
+  }
+}

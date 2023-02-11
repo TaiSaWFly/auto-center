@@ -1,0 +1,85 @@
+@import "../../../../styles/colors/colors.scss";
+
+.social {
+  display: flex;
+
+  @media (max-width: 1130px) {
+    margin-bottom: 20px;
+  }
+}
+
+.social__item {
+  margin-right: 10px;
+  width: 60px;
+  height: 60px;
+  border: 1px solid $lbTertiary;
+  border-radius: 50%;
+
+  position: relative;
+  transition: background-color 0.3s ease-in-out;
+
+  &:hover {
+    background: $lbTertiary;
+
+    .social__icon {
+      stroke: black;
+    }
+  }
+
+  &:last-of-type {
+    margin-right: 0;
+  }
+
+  @media (max-width: 1130px) {
+    width: 50px;
+    height: 50px;
+  }
+}
+
+.social__item__dark {
+  margin-right: 10px;
+  width: 60px;
+  height: 60px;
+  border: 1px solid $bgQuaternary;
+  border-radius: 50%;
+
+  position: relative;
+  transition: background-color 0.3s ease-in-out;
+
+  &:hover {
+    background: $bgQuaternary;
+
+    .social__icon__dark {
+      stroke: $lbTertiary;
+    }
+  }
+
+  &:last-of-type {
+    margin-right: 0;
+  }
+
+  @media (max-width: 1130px) {
+    width: 50px;
+    height: 50px;
+  }
+}
+
+.social__icon {
+  stroke: $lbTertiary;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate3d(-50%, -50%, 0);
+
+  transition: stroke 0.3s ease-in-out;
+}
+
+.social__icon__dark {
+  stroke: black;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate3d(-50%, -50%, 0);
+
+  transition: stroke 0.3s ease-in-out;
+}

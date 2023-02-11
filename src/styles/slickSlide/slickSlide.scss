@@ -1,0 +1,122 @@
+// Css Slick-slider https://react-slick.neostack.com/
+
+@import "../colors/colors.scss";
+
+.slick-slider {
+  height: 100%;
+
+  & .slick-list {
+    height: 100%;
+  }
+
+  & .slick-track {
+    height: 100%;
+  }
+}
+
+.slick-slide div {
+  outline: none;
+}
+
+.main_screen_slider {
+  position: relative;
+
+  & .slick-slide div {
+    height: 100%;
+  }
+
+  & .slick-prev,
+  & .slick-next {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background: $accent;
+    cursor: pointer;
+
+    position: absolute;
+    z-index: 100;
+    bottom: 59px;
+
+    transition: background-color 0.3s ease-in-out;
+
+    &:hover {
+      background: $bgPrimary;
+    }
+
+    & div {
+      width: 24px;
+      height: 24px;
+
+      position: absolute;
+      top: 50%;
+      left: 50%;
+
+      transform: translate3d(-50%, -50%, 0);
+    }
+
+    @media (max-width: 985px) {
+      bottom: 40px;
+    }
+
+    @media (max-width: 576px) {
+      bottom: 15px;
+    }
+
+    @media (max-width: 475px) {
+      width: 50px;
+      height: 50px;
+    }
+  }
+
+  & .slick-prev {
+    left: 40px;
+
+    @media (max-width: 985px) {
+      left: 50px;
+    }
+
+    @media (max-width: 576px) {
+      left: 15px;
+    }
+  }
+
+  & .slick-next {
+    left: 105px;
+
+    @media (max-width: 985px) {
+      left: 115px;
+    }
+
+    @media (max-width: 576px) {
+      left: 80px;
+    }
+
+    @media (max-width: 475px) {
+      left: 70px;
+    }
+  }
+}
+
+.car_models_slider {
+  & .slick-slide {
+    margin-left: -40px;
+
+    &:first-of-type {
+      margin-left: 0;
+    }
+
+    @media (max-width: 985px) {
+      margin-left: -30px;
+    }
+
+    @media (max-width: 576px) {
+      margin-left: -20px;
+    }
+  }
+}
+
+.review_slider {
+  & .slick-track {
+    height: auto;
+  }
+}

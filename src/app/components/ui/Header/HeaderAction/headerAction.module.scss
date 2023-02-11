@@ -1,0 +1,54 @@
+@import "../../../../../styles/colors/colors.scss";
+
+.header_action {
+  display: flex;
+  align-items: center;
+  position: relative;
+
+  @media (max-width: 1130px) {
+    padding-right: 20px;
+  }
+
+  @media (max-width: 576px) {
+    padding-right: 0;
+
+    & > *:nth-child(1) {
+      order: 1;
+    }
+  }
+}
+
+.header_action__state_menu {
+  width: 36px;
+
+  display: flex;
+  justify-content: space-around;
+  margin: 0 20px;
+  cursor: pointer;
+
+  @media (max-width: 1130px) {
+    margin: 0;
+
+    position: absolute;
+    top: 7px;
+    right: -39px;
+  }
+
+  @media (max-width: 576px) {
+    position: static;
+  }
+}
+
+.header_action__btn {
+  font-size: 1.3rem;
+  padding: 1.2rem 2rem;
+
+  &:hover {
+    background-color: $bgQuaternary;
+    color: $lbTertiary;
+  }
+
+  @media (max-width: 576px) {
+    margin-right: 12px;
+  }
+}

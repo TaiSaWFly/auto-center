@@ -1,0 +1,84 @@
+@import "../../../../styles/colors/colors.scss";
+
+.car_models {
+  margin-bottom: 180px;
+
+  @media (max-width: 985px) {
+    margin-bottom: 120px;
+  }
+
+  @media (max-width: 576px) {
+    margin-bottom: 100px;
+  }
+}
+
+.car_models__title {
+  margin-bottom: 60px;
+  font-family: "Arial Nova Bold";
+  font-weight: 700;
+  font-size: 1.2rem;
+  line-height: 2;
+  color: $lbSecondary;
+  text-transform: uppercase;
+
+  @media (max-width: 985px) {
+    margin-bottom: 40px;
+  }
+}
+
+.car_models__slider {
+  overflow: hidden;
+}
+
+.car_models__slider_border {
+  width: 300px;
+  height: 300px;
+  border: 1px solid $bgPrimary;
+  border-radius: 50%;
+  position: relative;
+
+  @media (max-width: 985px) {
+    width: 230px;
+    height: 230px;
+  }
+
+  @media (max-width: 576px) {
+    width: 190px;
+    height: 190px;
+  }
+}
+
+.car_models__slider_icon {
+  width: 200px;
+  height: 200px;
+
+  position: absolute;
+  top: 50%;
+  left: 50%;
+
+  transform: translate3d(-50%, -50%, 0);
+  & svg {
+    width: 200px;
+    height: 200px;
+
+    @media (max-width: 985px) {
+      width: 170px;
+      height: 170px;
+    }
+
+    @media (max-width: 576px) {
+      width: 130px;
+      height: 130px;
+    }
+  }
+
+  @media (max-width: 985px) {
+    width: 170px;
+    height: 170px;
+  }
+
+  @media (max-width: 576px) {
+    width: 130px;
+    height: 130px;
+  }
+}

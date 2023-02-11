@@ -1,0 +1,20 @@
+@import "../../../../../styles/colors/colors.scss";
+
+.navigate {
+  padding-right: 19px;
+  border-right: 1px solid $sprSecondary;
+
+  @media (max-width: 1130px) {
+    display: none;
+  }
+}
+
+.navigate_menus {
+  display: flex;
+  font-family: "Arial Nova Regular";
+  font-size: 1.5rem;
+  line-height: 1.2;
+
+  cursor: pointer;
+  position: relative;
+}

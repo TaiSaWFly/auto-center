@@ -1,0 +1,137 @@
+@import "../../../../styles/colors/colors.scss";
+
+.car_service {
+  margin-top: 180px;
+
+  @media (max-width: 985px) {
+    margin-top: 120px;
+  }
+
+  @media (max-width: 576px) {
+    margin-top: 100px;
+  }
+}
+
+.car_service__title {
+  margin-bottom: 60px;
+  font-family: "Arial Nova Regular";
+  font-weight: 400;
+  font-size: 6.7rem;
+  line-height: 0.95;
+
+  @media (max-width: 985px) {
+    font-size: 5.5rem;
+    margin-bottom: 40px;
+  }
+
+  @media (max-width: 925px) {
+    font-size: 4.7rem;
+  }
+
+  @media (max-width: 744px) {
+    font-size: 3.4rem;
+  }
+}
+
+.car_service__wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  margin: -20px;
+
+  @media (max-width: 985px) {
+    margin: -10px;
+  }
+}
+
+.car_service__item_wrapper {
+  width: 50%;
+  padding: 20px;
+  cursor: pointer;
+
+  &:hover {
+    .car_service__item {
+      background: $accent;
+    }
+
+    .car_service__item_code {
+      color: $lbTertiary;
+    }
+
+    .car_service__item_action {
+      background: $bgQuaternary;
+    }
+
+    .car_service__item_action_icon {
+      stroke: $lbTertiary;
+    }
+  }
+
+  @media (max-width: 985px) {
+    padding: 10px;
+  }
+
+  @media (max-width: 660px) {
+    width: 100%;
+  }
+}
+
+.car_service__item {
+  background: $bgPrimary;
+  height: 100%;
+
+  transition: background-color 0.3s ease-in-out;
+}
+
+.car_service__item_image {
+  height: 360px;
+
+  @media (max-width: 985px) {
+    height: 268px;
+  }
+}
+
+.car_service__item_info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 40px;
+
+  @media (max-width: 985px) {
+    margin: 20px;
+  }
+}
+
+.car_service__item_info__wrapper {
+  & span {
+    display: block;
+    font-size: 2.1rem;
+    line-height: 1.2;
+
+    @media (max-width: 985px) {
+      font-size: 1.8rem;
+    }
+  }
+}
+
+.car_service__item_code {
+  color: $lbSecondary;
+  transition: color 0.3s ease-in-out;
+}
+
+.car_service__item_action {
+  width: 40px;
+  height: 40px;
+  padding: 0;
+  border-radius: 50%;
+  position: relative;
+}
+
+.car_service__item_action_icon {
+  stroke: black;
+  transition: stroke 0.3s ease-in-out;
+
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate3d(-50%, -50%, 0);
+}

@@ -1,0 +1,96 @@
+@import "../../../../../styles/colors/colors.scss";
+
+.menu_info__contact {
+  margin-bottom: 150px;
+
+  @media (max-width: 1130px) {
+    margin-bottom: 20px;
+  }
+}
+
+.menu_info__telephone {
+  margin-bottom: 20px;
+  font-size: 3.8rem;
+  line-height: 1.1;
+  color: $accent;
+  white-space: nowrap;
+
+  @media (max-width: 1130px) {
+    font-size: 3.2rem;
+    margin-bottom: 10px;
+  }
+
+  @media (max-width: 425px) {
+    font-size: 2.4rem;
+  }
+}
+
+.menu_info__email {
+  margin-bottom: 20px;
+  font-size: 2.1rem;
+  line-height: 1.2;
+  color: $lbPrimary;
+
+  & a {
+    display: inline;
+    position: relative;
+
+    &::after {
+      content: "";
+      width: 100%;
+      height: 1px;
+      background: $lbPrimary;
+
+      position: absolute;
+      bottom: 1px;
+      left: 0;
+    }
+  }
+
+  @media (max-width: 1130px) {
+    font-size: 1.9rem;
+    margin-bottom: 10px;
+  }
+
+  @media (max-width: 425px) {
+    font-size: 1.8rem;
+  }
+}
+
+.menu_info__time {
+  & span {
+    display: block;
+    font-size: 1.6rem;
+    line-height: 1.4;
+    color: $lbSecondary;
+
+    @media (max-width: 1130px) {
+      font-size: 1.4rem;
+    }
+  }
+}
+
+.menu_info__address {
+  margin-bottom: 40px;
+
+  @media (max-width: 1130px) {
+    display: flex;
+    margin-bottom: 20px;
+
+    & > *:nth-child(1) {
+      margin-right: 40px;
+    }
+  }
+
+  @media (max-width: 625px) {
+    & > *:nth-child(1) {
+      margin-right: 20px;
+    }
+  }
+
+  @media (max-width: 425px) {
+    & > *:nth-child(1) {
+      margin-right: 10px;
+    }
+  }
+}

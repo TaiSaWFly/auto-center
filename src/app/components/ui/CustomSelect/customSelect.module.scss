@@ -1,0 +1,203 @@
+@import "../../../../styles/colors/colors.scss";
+
+.select {
+  position: relative;
+  z-index: 1000;
+}
+
+.select__btn {
+  width: 100%;
+  padding: 2.8rem 3rem;
+
+  text-align: start;
+  font-size: 1.6rem;
+  line-height: 1.4;
+  outline: none;
+
+  background: transparent;
+  border: 1px solid $lbSecondary;
+  transition: all 0.3s ease-in-out;
+
+  position: relative;
+
+  @media (max-width: 850px) {
+    padding: 2.3rem 1.5rem;
+  }
+}
+
+.select__btn__active {
+  width: 100%;
+  padding: 3.8rem 3rem 1.8rem 3rem;
+
+  text-align: start;
+  font-size: 1.6rem;
+  line-height: 1.4;
+  outline: none;
+
+  background: transparent;
+  border: 1px solid $sysOrange;
+  box-shadow: 0px 2px 15px rgba(44, 44, 44, 0.15);
+
+  transition: all 0.3s ease-in-out;
+
+  position: relative;
+
+  @media (max-width: 850px) {
+    padding: 3.3rem 1.5rem 1.3rem 1.5rem;
+  }
+}
+
+.select__btn__value {
+  width: 100%;
+  padding: 3.8rem 3rem 1.8rem 3rem;
+
+  text-align: start;
+  font-size: 1.6rem;
+  line-height: 1.4;
+  outline: none;
+
+  background: transparent;
+  border: 1px solid $lbSecondary;
+
+  transition: all 0.3s ease-in-out;
+
+  position: relative;
+
+  @media (max-width: 850px) {
+    padding: 3.3rem 1.5rem 1.3rem 1.5rem;
+  }
+}
+
+.select__btn_icon {
+  height: 24px;
+
+  position: absolute;
+  top: 50%;
+  right: 15px;
+
+  transform: translateY(-50%);
+
+  & * {
+    transition: stroke 0.3s ease-in-out;
+  }
+
+  &:hover {
+    * {
+      stroke: $accent;
+    }
+  }
+}
+
+.select__label {
+  font-size: 1.6rem;
+  line-height: 1.4;
+  color: $lbPrimary;
+
+  position: absolute;
+  top: 28px;
+  left: 30px;
+
+  transition: all 0.3s ease-in-out;
+
+  & span {
+    color: $sysRed;
+  }
+
+  @media (max-width: 850px) {
+    top: 23px;
+    left: 15px;
+  }
+}
+
+.select__label__active {
+  font-size: 1.2rem;
+  line-height: 1.4;
+  color: $lbSecondary;
+
+  position: absolute;
+  top: 18px;
+  left: 30px;
+
+  transition: all 0.3s ease-in-out;
+
+  & span {
+    color: $lbSecondary;
+  }
+
+  @media (max-width: 850px) {
+    top: 15px;
+    left: 15px;
+  }
+}
+
+.select__dropdown {
+  width: 100%;
+
+  position: absolute;
+  top: calc(100% + 5px);
+  left: 0;
+
+  @media (max-width: 450px) {
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.65);
+
+    position: fixed;
+    top: 0;
+    left: 0;
+  }
+}
+
+.select__dropdown_list {
+  padding: 5px 0;
+  font-size: 1.6rem;
+  line-height: 1.4;
+
+  background: $bgPrimary;
+  border: 1px solid $lbSecondary;
+  border-radius: 7px;
+  box-shadow: 0px 2px 15px rgba(44, 44, 44, 0.15);
+
+  @media (max-width: 450px) {
+    width: 100%;
+
+    position: absolute;
+    bottom: 0;
+    left: 0;
+  }
+}
+
+.select__dropdown_list_item {
+  padding: 10px 0 10px 30px;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+
+  &:hover {
+    background: rgba($accent, 0.5);
+  }
+}
+
+.select__dropdown_list_item__active {
+  padding: 10px 0 10px 30px;
+  background: $accent;
+  cursor: pointer;
+
+  transition: all 0.2s ease-in-out;
+}
+
+.select__dropdown_close {
+  display: none;
+  height: 24px;
+  cursor: pointer;
+
+  & * {
+    stroke: $lbTertiary;
+  }
+
+  @media (max-width: 450px) {
+    display: block;
+
+    position: absolute;
+    top: -39px;
+    right: 15px;
+  }
+}

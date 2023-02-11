@@ -1,0 +1,67 @@
+@import "../../../../../styles/colors/colors.scss";
+
+.main_screen_slider {
+  width: 49%;
+  height: 100%;
+
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 1000;
+
+  @media (max-width: 985px) {
+    width: 100%;
+    height: 750px;
+    position: relative;
+  }
+
+  @media (max-width: 576px) {
+    height: 470px;
+  }
+
+  @media (max-width: 425px) {
+    height: 312px;
+  }
+}
+
+.main_screen_slider__wrapper {
+  position: relative;
+  height: 100%;
+}
+
+.main_screen_slider__counter {
+  font-size: 3.8rem;
+  line-height: 1.1;
+  color: $lbTertiary;
+  text-align: end;
+
+  position: absolute;
+  bottom: 65px;
+  left: 600px;
+
+  @media (max-width: 1465px) {
+    left: 82.5%;
+  }
+
+  @media (max-width: 1370px) {
+    left: 80%;
+  }
+
+  @media (max-width: 985px) {
+    right: 50px;
+    bottom: 50px;
+  }
+
+  @media (max-width: 744px) {
+    font-size: 3.2rem;
+  }
+
+  @media (max-width: 576px) {
+    font-size: 3rem;
+    bottom: 25px;
+  }
+
+  @media (max-width: 400px) {
+    font-size: 2.4rem;
+  }
+}

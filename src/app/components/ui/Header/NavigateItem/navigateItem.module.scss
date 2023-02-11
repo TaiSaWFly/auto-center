@@ -1,0 +1,24 @@
+@import "../../../../../styles/colors/colors.scss";
+
+.navigate_menus__item {
+  display: flex;
+  align-items: center;
+  padding: 26px 20px;
+
+  &:hover {
+    .navigate_menus__item_link {
+      color: $accent;
+    }
+  }
+}
+
+.navigate_menus__item_link {
+  white-space: nowrap;
+  color: $lbPrimary;
+
+  transition: color 0.2s ease-in-out;
+}
+
+.navigate_menus__item_chevron {
+  margin-left: 5px;
+}

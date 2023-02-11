@@ -1,0 +1,69 @@
+@import "../../../../../styles/colors/colors.scss";
+
+.feedback_form__field {
+  margin-bottom: 20px;
+
+  & textarea {
+    height: 180px;
+  }
+
+  @media (max-width: 850px) {
+    margin-bottom: 10px;
+
+    & textarea {
+      height: 160px;
+    }
+  }
+}
+
+.feedback_form__action {
+  display: flex;
+  align-items: center;
+  margin-top: 40px;
+
+  & button {
+    padding: 3rem 7.55rem;
+
+    &:hover {
+      color: $lbTertiary;
+      background: $bgQuaternary;
+
+      & * {
+        stroke: $lbTertiary;
+      }
+    }
+
+    @media (max-width: 850px) {
+      padding: 3rem 6.05rem;
+    }
+
+    @media (max-width: 650px) {
+      margin-bottom: 20px;
+      padding: 2rem 4rem;
+    }
+  }
+
+  @media (max-width: 650px) {
+    flex-direction: column-reverse;
+    align-items: baseline;
+  }
+
+  @media (max-width: 576px) {
+    margin-top: 25px;
+  }
+}
+
+.feedback_form__action_agreement {
+  margin-right: 30px;
+  font-size: 1.4rem;
+  line-height: 1.4;
+  color: $lbSecondary;
+
+  & span {
+    color: $lbPrimary;
+  }
+
+  @media (max-width: 425px) {
+    margin-right: 0;
+  }
+}

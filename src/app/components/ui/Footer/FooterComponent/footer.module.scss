@@ -1,0 +1,65 @@
+@import "../../../../../styles/colors/colors.scss";
+
+.footer {
+  color: $lbTertiary;
+  padding-top: 60px;
+  background: $bgQuaternary;
+
+  @media (max-width: 985px) {
+    padding-top: 40px;
+  }
+}
+
+.footer__wrapper {
+  display: flex;
+  padding-bottom: 40px;
+  border-bottom: 1px solid $sprPrimary;
+
+  @media (max-width: 1130px) {
+    display: block;
+  }
+
+  @media (max-width: 985px) {
+    padding-bottom: 20px;
+  }
+}
+
+.footer__info {
+  width: 100%;
+  max-width: 460px;
+
+  @media (max-width: 1130px) {
+    max-width: 100%;
+    margin-bottom: 40px;
+  }
+}
+
+.footer_info__social {
+  display: none;
+
+  @media (max-width: 1130px) {
+    display: block;
+  }
+}
+
+.footer__navigate {
+  width: 100%;
+}
+
+.footer__author {
+  display: flex;
+  justify-content: space-between;
+  padding: 40px 0;
+
+  font-size: 1.4rem;
+  line-height: 1.4;
+  color: $lbSecondary;
+
+  @media (max-width: 985px) {
+    padding: 20px 0;
+  }
+}
+
+.footer__author_name {
+  color: $lbTertiary;
+}

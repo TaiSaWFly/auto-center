@@ -1,0 +1,135 @@
+@import "../../../../styles/colors/colors.scss";
+
+.mobile_app {
+  background: $accent;
+  overflow: hidden;
+}
+
+.mobile_app__wrapper {
+  padding: 30px 0;
+  position: relative;
+
+  @media (max-width: 985px) {
+    padding: 40px 0;
+  }
+
+  @media (max-width: 576px) {
+    padding: 20px 0;
+  }
+}
+
+.mobile_app__image {
+  width: 255px;
+
+  position: absolute;
+  top: 10px;
+  left: 67px;
+
+  @media (max-width: 1220px) {
+    left: 0;
+  }
+
+  @media (max-width: 1130px) {
+    left: -60px;
+  }
+
+  @media (max-width: 985px) {
+    display: none;
+  }
+}
+
+.mobile_app__info {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+
+  @media (max-width: 985px) {
+    justify-content: space-between;
+  }
+
+  @media (max-width: 670px) {
+    display: block;
+  }
+}
+
+.mobile_app__info_wrapper {
+  margin-right: 210px;
+
+  @media (max-width: 1320px) {
+    margin-right: 110px;
+  }
+
+  @media (max-width: 1150px) {
+    margin-right: 80px;
+  }
+
+  @media (max-width: 1060px) {
+    margin-right: 20px;
+  }
+
+  @media (max-width: 985px) {
+    margin-right: 65px;
+  }
+
+  @media (max-width: 720px) {
+    margin-right: 10px;
+  }
+
+  @media (max-width: 670px) {
+    margin-right: 0;
+    margin-bottom: 20px;
+  }
+}
+
+.mobile_app__info_title {
+  margin-bottom: 20px;
+  font-size: 2.1rem;
+  line-height: 1.2;
+
+  @media (max-width: 774px) {
+    margin-bottom: 10px;
+    font-size: 1.9rem;
+  }
+
+  @media (max-width: 576px) {
+    font-size: 1.8rem;
+  }
+}
+
+.mobile_app__info_feature {
+  display: flex;
+
+  & span {
+    margin-left: 10px;
+    font-family: "Arial Nova Bold";
+    font-size: 1.2rem;
+    line-height: 2;
+    text-transform: uppercase;
+
+    @media (max-width: 576px) {
+      font-size: 1rem;
+    }
+  }
+}
+
+.mobile_app__info_magazine {
+  display: flex;
+
+  @media (max-width: 670px) {
+    justify-content: flex-end;
+  }
+}
+
+.mobile_app__info_app_img {
+  margin-right: 18px;
+  width: 120px;
+  height: 40px;
+
+  &:last-of-type {
+    margin-right: 0;
+  }
+
+  @media (max-width: 774px) {
+    margin-right: 10px;
+  }
+}

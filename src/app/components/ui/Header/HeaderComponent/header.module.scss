@@ -1,0 +1,29 @@
+@import "../../../../../styles/colors/colors.scss";
+
+.header {
+  position: relative;
+}
+
+.header__fixed {
+  width: 100%;
+  background: $bgPrimary;
+
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1200;
+}
+
+.header__wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.header__group {
+  display: flex;
+
+  @media (max-width: 1130px) {
+    padding: 10px 0;
+  }
+}

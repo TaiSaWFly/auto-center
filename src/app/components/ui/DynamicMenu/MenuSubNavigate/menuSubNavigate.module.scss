@@ -1,0 +1,49 @@
+@import "../../../../../styles/colors/colors.scss";
+
+.menu_sub_navigate {
+  padding-top: 10px;
+  border-top: 1px solid $sprPrimary;
+  margin-bottom: 20px;
+}
+
+.menu_sub_navigate__title {
+  margin-bottom: 20px;
+  font-size: 3.2rem;
+  line-height: 1.1;
+  color: $lbSecondary;
+  text-transform: capitalize;
+
+  @media (max-width: 625px) {
+    font-size: 2.8rem;
+  }
+
+  @media (max-width: 425px) {
+    margin-bottom: 10px;
+    font-size: 1.8rem;
+    line-height: 1.2;
+  }
+}
+
+.menu_sub_navigate__list {
+  display: flex;
+  flex-flow: column wrap;
+  height: 50px;
+  font-size: 1.5rem;
+  line-height: 1.2;
+}
+
+.menu_sub_navigate__list_item {
+  display: flex;
+  align-items: center;
+  width: 50%;
+  height: 25px;
+
+  & span {
+    cursor: pointer;
+    transition: color 0.3s ease-in-out;
+
+    &:hover {
+      color: $accent;
+    }
+  }
+}

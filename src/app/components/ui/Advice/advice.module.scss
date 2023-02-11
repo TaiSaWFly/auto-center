@@ -1,0 +1,62 @@
+@import "../../../../styles/colors/colors.scss";
+
+.advice {
+  padding: 180px 0;
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("../../../../assets/images/BackgroundImage/advice.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  color: $lbTertiary;
+
+  @media (max-width: 985px) {
+    padding: 120px 0;
+  }
+
+  @media (max-width: 576px) {
+    padding: 40px 0;
+  }
+}
+
+.advice__wrapper {
+  border-top: 1px solid $lbTertiary;
+}
+
+.advice_title {
+  margin-top: 10px;
+  margin-bottom: 60px;
+
+  font-family: "Arial Nova Bold";
+  font-size: 1.2rem;
+  line-height: 2;
+  text-transform: uppercase;
+
+  @media (max-width: 985px) {
+    margin-bottom: 40px;
+  }
+
+  @media (max-width: 576px) {
+    font-size: 1rem;
+    margin-bottom: 50px;
+  }
+}
+
+.advice_content {
+  margin-left: auto;
+  width: 100%;
+  max-width: 650px;
+
+  & p {
+    margin-bottom: 40px;
+    font-size: 2.8rem;
+    line-height: 1.2;
+
+    @media (max-width: 985px) {
+      font-size: 2.4rem;
+    }
+
+    @media (max-width: 576px) {
+      font-size: 2.1rem;
+    }
+  }
+}
