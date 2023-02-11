@@ -1,4 +1,4 @@
-import React, { useEffect, useMemo, useRef, useState } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import { sliderPromotions } from "../../../mockData/defautlData";
 import Button from "../../common/ButtonComponent/Button";
 import { ReactComponent as ChevronRight } from "../../../../assets/images/Icons/chevrons/chevron-right.svg";

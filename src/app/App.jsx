@@ -11,14 +11,10 @@ import AutoServiceMap from "./components/ui/AutoServiceMap/AutoServiceMapCompone
 import Advice from "./components/ui/Advice/Advice";
 import MobileApp from "./components/ui/MobileApp/MobileApp";
 import Footer from "./components/ui/Footer/FooterComponent/Footer";
-import FeedbackForm from "./components/ui/Form/FeedbackForm/FeedbackForm";
-import RegistrationServiceForm from "./components/ui/Form/RegistrationServiceForm/RegistrationServiceForm";
 
 const App = () => {
   return (
     <>
-      {/* <FeedbackForm /> */}
-      {/* <RegistrationServiceForm /> */}
       <Header />
       <PageLayout>
         <MainScreen />
